@@ -1,0 +1,4 @@
+
+add_executable(sdl_01_create_and_show_window sdl_create_and_show_window.cpp)
+
+target_link_sdl(sdl_01_create_and_show_window)

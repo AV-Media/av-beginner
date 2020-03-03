@@ -1,0 +1,6 @@
+
+add_executable(sdl_02_load_image_and_display sdl_load_image_and_display.cpp)
+
+target_link_sdl(sdl_02_load_image_and_display)
+target_link_sdl_image(sdl_02_load_image_and_display)
+
