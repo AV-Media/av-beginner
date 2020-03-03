@@ -1,0 +1,4 @@
+
+add_executable(sound_touch_01_init sound_touch_init.cpp)
+
+target_link_sound_touch(sound_touch_01_init)
