@@ -45,7 +45,9 @@ endmacro()
 
 macro(target_link_sound_touch name)
     message("${name} link sound touch")
-    target_link_libraries(${name} SoundTouch)
+#   target_link_libraries 直接链接 SoundTouch 出问题，加一个 find_library 就好了
+    find_library(soundTouch SoundTouch)
+    target_link_libraries(${name} ${soundTouch})
 endmacro()
 
 # ----------------  init definition  ----------------

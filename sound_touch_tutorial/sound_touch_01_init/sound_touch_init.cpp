@@ -16,10 +16,14 @@
 
 #include <iostream>
 using namespace std;
-
 #include <SoundTouch.h>
+
+using namespace soundtouch;
 
 int main() {
     cout << "av-beginner" << endl;
+    SoundTouch * soundTouch = new SoundTouch();
+    soundTouch->setSampleRate(44100);
+    soundTouch->clear();
     return 0;
 }
